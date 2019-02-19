@@ -83,7 +83,7 @@ describe('Campaigns', () => {
     await campaign.methods
       .createRequest('Buy batteries', '100', accounts[1])
       .send({
-        from:accounts[0]
+        from: accounts[0],
         gas: '1000000'
       });
       //not modifying data, so use .call()
