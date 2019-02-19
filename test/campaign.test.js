@@ -86,6 +86,7 @@ describe('Campaigns', () => {
         from: accounts[0],
         gas: '1000000'
       });
+      
       //not modifying data, so use .call()
       const request = await campaign.methods.requests(0).call();
   });
